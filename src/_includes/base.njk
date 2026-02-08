@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} — {{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    {% if cssFile %}<link rel="stylesheet" href="/css/{{ cssFile }}">{% endif %}
+</head>
+<body>
+    {% include "header.njk" %}
+    {% block content %}{% endblock %}
+    {% include "footer.njk" %}
+
+    <button class="scroll-top" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    {% block scripts %}{% endblock %}
+
+    <script>
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 600);
+            if (window.scrollY > 80) {
+                header.style.background = 'rgba(237, 232, 224, 0.95)';
+                header.style.boxShadow = '0 1px 0 rgba(42,36,32,0.06)';
+            } else {
+                header.style.background = 'rgba(237, 232, 224, 0.85)';
+                header.style.boxShadow = 'none';
+            }
+        }, { passive: true });
+    </script>
+</body>
+</html>

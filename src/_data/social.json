@@ -1,0 +1,12 @@
+{
+  "eyebrow": "Share Your Space · Tag @MaisonAurelia",
+  "headline": "Let us inspire one another through the art of living",
+  "primaryButton": { "label": "View Client Interiors", "url": "#" },
+  "secondaryButton": { "label": "Follow on Instagram", "url": "#" },
+  "images": [
+    { "src": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=400&q=80&auto=format", "alt": "Client interior 1" },
+    { "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&q=80&auto=format", "alt": "Client interior 2" },
+    { "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80&auto=format", "alt": "Client interior 3" },
+    { "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80&auto=format", "alt": "Client interior 4" }
+  ]
+}

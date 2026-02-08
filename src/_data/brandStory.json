@@ -1,0 +1,9 @@
+{
+  "eyebrow": "Our Heritage",
+  "headline": "Inspired by tradition, shaped by modern elegance",
+  "body": "Maison Aurelia was founded on a simple conviction: that the spaces we inhabit should elevate the way we live. Drawing from European ateliers and contemporary design, we create furniture that transcends trends — pieces that become part of your story.",
+  "primaryButton": { "label": "Our Story", "url": "/about/" },
+  "secondaryButton": { "label": "Inspiration", "url": "#" },
+  "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=85&auto=format",
+  "imageAlt": "Warm candlelit interior with art and handcrafted furniture"
+}

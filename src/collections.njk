@@ -1,0 +1,121 @@
+---
+title: Collections
+layout: base.njk
+cssFile: collections.css
+activePage: Collections
+---
+
+<!-- PAGE INTRO -->
+<section class="page-intro">
+    <div class="page-intro__inner reveal">
+        <div class="page-intro__left">
+            <p class="t-eyebrow">{{ products.intro.eyebrow }}</p>
+            <h1 class="t-display t-display--xl">{{ products.intro.headline }}</h1>
+            <p class="t-body">{{ products.intro.body }}</p>
+        </div>
+        <div class="page-intro__right">
+            <a href="{{ products.intro.buttonUrl }}" class="btn btn--primary">{{ products.intro.buttonLabel }} <span class="arrow">&rarr;</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar reveal">
+    {% for filter in products.filters %}
+    <button class="filter-btn{% if loop.first %} active{% endif %}">{{ filter }}</button>
+    {% endfor %}
+</div>
+
+<!-- COLLECTION ROWS -->
+{% for collection in products.collections %}
+<section class="collection-row">
+    <div class="collection-row__header reveal">
+        <div class="collection-row__info">
+            <p class="t-eyebrow">{{ collection.number }} &mdash; {{ collection.category }}</p>
+            <h2>{{ collection.name }}</h2>
+            <p>{{ collection.description }}</p>
+        </div>
+        <div class="collection-row__controls">
+            <button class="carousel-btn" data-dir="prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-btn" data-dir="next" aria-label="Next">
+                <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
+        </div>
+    </div>
+    <div class="carousel-wrap">
+        <div class="carousel">
+            {% for item in collection.items %}
+            <div class="carousel-item">
+                <div class="carousel-item__image">
+                    {% if item.tag %}<span class="carousel-item__tag">{{ item.tag }}</span>{% endif %}
+                    <img src="{{ item.image }}" alt="{{ item.alt }}">
+                </div>
+                <p class="carousel-item__name">{{ item.name }}</p>
+                <p class="carousel-item__meta">{{ item.meta }}</p>
+                <p class="carousel-item__price">{{ item.price }} <span>{{ item.priceNote }}</span></p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="carousel-progress">
+            <div class="carousel-progress__bar"><div class="carousel-progress__fill"></div></div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+<!-- CTA BANNER -->
+<section class="cta-banner reveal--slow">
+    <p class="t-eyebrow">{{ products.cta.eyebrow }}</p>
+    <h2 class="t-display t-display--lg">{{ products.cta.headline }}</h2>
+    <p class="t-body">{{ products.cta.body }}</p>
+    <div class="btn-group">
+        <a href="{{ products.cta.primaryButton.url }}" class="btn btn--primary">{{ products.cta.primaryButton.label }} <span class="arrow">&rarr;</span></a>
+        <a href="{{ products.cta.secondaryButton.url }}" class="btn btn--outline">{{ products.cta.secondaryButton.label }} <span class="arrow">&rarr;</span></a>
+    </div>
+</section>
+
+{% block scripts %}
+<script>
+    // Reveal animations
+    const allReveals = document.querySelectorAll('.reveal, .reveal--slow');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    allReveals.forEach(el => revealObserver.observe(el));
+
+    // Carousel controls & progress
+    document.querySelectorAll('.collection-row').forEach(row => {
+        const carousel = row.querySelector('.carousel');
+        const prevBtn = row.querySelector('[data-dir="prev"]');
+        const nextBtn = row.querySelector('[data-dir="next"]');
+        const fill = row.querySelector('.carousel-progress__fill');
+        const scrollAmount = 340;
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+            nextBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+        }
+        function updateProgress() {
+            if (!fill || !carousel) return;
+            const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+            fill.style.width = Math.max(10, maxScroll > 0 ? (carousel.scrollLeft / maxScroll) * 100 : 0) + '%';
+        }
+        carousel.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+    });
+
+    // Filter toggle
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+</script>
+{% endblock %}

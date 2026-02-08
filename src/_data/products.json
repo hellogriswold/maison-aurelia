@@ -1,0 +1,97 @@
+{
+  "intro": {
+    "eyebrow": "Our Collections",
+    "headline": "Pieces shaped by artisans, curated for life",
+    "body": "Six collections, each with a distinct character — unified by our commitment to enduring materials, considered proportions, and the belief that furniture should grow more beautiful with time.",
+    "buttonLabel": "Book a Consultation",
+    "buttonUrl": "#"
+  },
+  "filters": ["All Collections", "Living", "Dining", "Bedroom", "Study", "Outdoor", "Lighting"],
+  "collections": [
+    {
+      "number": "01",
+      "category": "Living",
+      "name": "Signature Sofas",
+      "description": "Sculptural comfort defined by hand-stitched upholstery, kiln-dried hardwood frames, and silhouettes that anchor any room with quiet authority.",
+      "items": [
+        { "name": "The Belmont", "meta": "Bouclé Ivory · Walnut Frame", "price": "€8,400", "priceNote": "from", "tag": "Bestseller", "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80&auto=format", "alt": "The Belmont Sofa" },
+        { "name": "The Laurent Sectional", "meta": "Linen Fog · Oak Base", "price": "€12,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&auto=format", "alt": "The Laurent Sectional" },
+        { "name": "The Maison Daybed", "meta": "Velvet Sage · Brass Legs", "price": "€6,800", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&q=80&auto=format", "alt": "The Maison Daybed" },
+        { "name": "The Noir Loveseat", "meta": "Leather Espresso · Steel Frame", "price": "€7,600", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80&auto=format", "alt": "The Noir Loveseat" },
+        { "name": "The Aurelia Chaise", "meta": "Cashmere Cream · Walnut", "price": "€5,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80&auto=format", "alt": "The Aurelia Chaise" }
+      ]
+    },
+    {
+      "number": "02",
+      "category": "Dining",
+      "name": "The Dining Collection",
+      "description": "Tables and chairs built for gathering — where solid hardwoods meet hand-finished surfaces designed to age gracefully through decades of shared meals.",
+      "items": [
+        { "name": "The Rosewood Table", "meta": "Solid Walnut · Seats 8", "price": "€14,800", "priceNote": "from", "tag": "New", "image": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80&auto=format", "alt": "The Rosewood Table" },
+        { "name": "The Artisan Round", "meta": "French Oak · Seats 6", "price": "€11,400", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80&auto=format", "alt": "The Artisan Round" },
+        { "name": "The Lyon Chair", "meta": "Leather Tan · Oak Frame", "price": "€1,800", "priceNote": "each", "tag": "", "image": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=600&q=80&auto=format", "alt": "The Lyon Chair" },
+        { "name": "The Console Sideboard", "meta": "Ash · Brass Hardware", "price": "€6,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80&auto=format", "alt": "The Console Sideboard" },
+        { "name": "The Provenance Bench", "meta": "Elm · Hand-Hewn", "price": "€3,400", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600&q=80&auto=format", "alt": "The Bench" }
+      ]
+    },
+    {
+      "number": "03",
+      "category": "Bedroom",
+      "name": "The Bedroom Collection",
+      "description": "Bed frames, nightstands, and dressers designed for sanctuary — where clean lines and natural materials create the conditions for rest.",
+      "items": [
+        { "name": "The Haven Bed Frame", "meta": "Walnut · King", "price": "€9,200", "priceNote": "from", "tag": "Bestseller", "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&auto=format", "alt": "The Haven Bed Frame" },
+        { "name": "The Repose Nightstand", "meta": "Oak · Brass Pulls", "price": "€2,400", "priceNote": "each", "tag": "", "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80&auto=format", "alt": "The Repose Nightstand" },
+        { "name": "The Silhouette Dresser", "meta": "Ash · 6 Drawer", "price": "€7,800", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=600&q=80&auto=format", "alt": "The Silhouette Dresser" },
+        { "name": "The Ateliers Headboard", "meta": "Linen Oat · King", "price": "€4,600", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80&auto=format", "alt": "The Upholstered Headboard" },
+        { "name": "The Miroir Vanity", "meta": "Walnut · Mirror", "price": "€5,600", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=600&q=80&auto=format", "alt": "The Vanity" }
+      ]
+    },
+    {
+      "number": "04",
+      "category": "Accent",
+      "name": "Accent Chairs & Seating",
+      "description": "Statement pieces that define a corner, complete a conversation area, or simply invite you to sit and stay. Each chair is an exercise in sculptural restraint.",
+      "items": [
+        { "name": "The Lune Chair", "meta": "Bouclé Sand · Oak", "price": "€3,800", "priceNote": "from", "tag": "New", "image": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=600&q=80&auto=format", "alt": "The Lune Chair" },
+        { "name": "The Arc Lounge", "meta": "Leather Cognac · Steel", "price": "€4,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&q=80&auto=format", "alt": "The Arc Lounge" },
+        { "name": "The Tradition Wingback", "meta": "Velvet Midnight · Walnut", "price": "€5,400", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80&auto=format", "alt": "The Wingback" },
+        { "name": "The Pivot Swivel", "meta": "Wool Charcoal · Brass Base", "price": "€3,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80&auto=format", "alt": "The Swivel" },
+        { "name": "The Repose Ottoman", "meta": "Linen Natural · Oak", "price": "€1,600", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80&auto=format", "alt": "The Ottoman" }
+      ]
+    },
+    {
+      "number": "05",
+      "category": "Study",
+      "name": "The Study Collection",
+      "description": "Desks, shelving, and storage designed for focused work and quiet contemplation. Where function meets the highest standard of form.",
+      "items": [
+        { "name": "The Heritage Desk", "meta": "Walnut · Leather Inlay", "price": "€8,800", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600&q=80&auto=format", "alt": "The Writing Desk" },
+        { "name": "The Bibliothèque", "meta": "Oak · Adjustable Shelves", "price": "€6,400", "priceNote": "from", "tag": "New", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80&auto=format", "alt": "The Bookcase" },
+        { "name": "The Atelier Task Chair", "meta": "Leather Saddle · Swivel", "price": "€3,600", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80&auto=format", "alt": "The Task Chair" },
+        { "name": "The Archive Cabinet", "meta": "Ash · Brass Pulls", "price": "€4,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80&auto=format", "alt": "The Filing Cabinet" },
+        { "name": "The Scribe Console", "meta": "Walnut · Minimal", "price": "€5,800", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80&auto=format", "alt": "The Console" }
+      ]
+    },
+    {
+      "number": "06",
+      "category": "Lighting",
+      "name": "The Lighting Collection",
+      "description": "Pendants, floor lamps, and table lights that sculpt atmosphere. Each fixture is handmade from natural materials — brass, linen, mouth-blown glass.",
+      "items": [
+        { "name": "The Orb Pendant", "meta": "Blown Glass · Brass", "price": "€2,400", "priceNote": "from", "tag": "Bestseller", "image": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&q=80&auto=format", "alt": "The Orb Pendant" },
+        { "name": "The Arc Floor Lamp", "meta": "Matte Black · Linen Shade", "price": "€3,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80&auto=format", "alt": "The Arc Floor Lamp" },
+        { "name": "The Atelier Table Lamp", "meta": "Ceramic · Linen", "price": "€1,200", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80&auto=format", "alt": "The Table Lamp" },
+        { "name": "The Maison Chandelier", "meta": "Brass · 12 Arm", "price": "€8,600", "priceNote": "from", "tag": "", "image": "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=600&q=80&auto=format", "alt": "The Chandelier" },
+        { "name": "The Demi Wall Sconce", "meta": "Brushed Brass · Glass", "price": "€980", "priceNote": "each", "tag": "", "image": "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=600&q=80&auto=format", "alt": "The Wall Sconce" }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Private Consultation",
+    "headline": "Not sure where to begin? Let our designers guide you.",
+    "body": "Every consultation is complimentary. Our team will help you select the perfect pieces for your space, materials, and lifestyle.",
+    "primaryButton": { "label": "Book a Consultation", "url": "#" },
+    "secondaryButton": { "label": "Our Story", "url": "/about/" }
+  }
+}

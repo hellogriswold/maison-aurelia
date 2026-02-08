@@ -1,0 +1,11 @@
+{
+  "eyebrow": "Private Consultation",
+  "headline": "Begin your interior journey with our design atelier",
+  "body": "Our in-house designers work intimately with you to create spaces that feel both extraordinary and unmistakably yours. Every consultation is complimentary.",
+  "primaryButton": { "label": "Book a Consultation", "url": "#" },
+  "secondaryButton": { "label": "Browse Our Pieces", "url": "#" },
+  "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=85&auto=format",
+  "imageAlt": "Elegant dining room with pendant lighting and designer chairs",
+  "tagName": "The Rosewood Table",
+  "tagDesc": "Bespoke · Solid Walnut"
+}

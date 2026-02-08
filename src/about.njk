@@ -1,0 +1,180 @@
+---
+title: About
+layout: base.njk
+cssFile: about.css
+activePage: About
+---
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <div class="about-hero__media">
+        <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+            <source src="{{ about.hero.video }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="about-hero__overlay"></div>
+    <div class="hero__card" style="animation: fadeSlideUp 1s var(--ease-out) 0.3s both;">
+        <p class="t-eyebrow">{{ about.hero.eyebrow }}</p>
+        <h1 class="t-display t-display--xl">{{ about.hero.headline }}</h1>
+        <p class="t-body" style="margin-top: var(--space-sm);">{{ about.hero.body }}</p>
+    </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy reveal--slow">
+    <p class="t-eyebrow">{{ about.philosophy.eyebrow }}</p>
+    <h2 class="t-display t-display--lg">{{ about.philosophy.headline }}</h2>
+    <div class="philosophy__body t-body--lg">
+        {% for p in about.philosophy.paragraphs %}
+        <p>{{ p }}</p>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="founders">
+    <div class="founders__image reveal--scale">
+        <img class="parallax-img" src="{{ about.founders.image }}" alt="{{ about.founders.imageAlt }}">
+    </div>
+    <div class="founders__content reveal--right">
+        <p class="t-eyebrow">{{ about.founders.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ about.founders.headline }}</h2>
+        {% for p in about.founders.paragraphs %}
+        <p class="t-body">{{ p }}</p>
+        {% endfor %}
+        <div class="founders__signature">
+            <p>{{ about.founders.signatureName }}</p>
+            <span>{{ about.founders.signatureTitle }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+    <div class="values__header reveal--slow">
+        <p class="t-eyebrow">{{ about.values.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ about.values.headline }}</h2>
+    </div>
+    <div class="values__grid stagger-children reveal">
+        {% for val in about.values.items %}
+        <div class="value-card stagger-item">
+            <div class="value-card__number">{{ val.number }}</div>
+            <h3 class="value-card__title">{{ val.title }}</h3>
+            <p class="value-card__body">{{ val.body }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ATELIER -->
+<section class="atelier">
+    <div class="atelier__media">
+        <img class="parallax-img" src="{{ about.atelier.image }}" alt="{{ about.atelier.imageAlt }}">
+    </div>
+    <div class="atelier__card reveal--left">
+        <p class="t-eyebrow">{{ about.atelier.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ about.atelier.headline }}</h2>
+        <p class="t-body">{{ about.atelier.body }}</p>
+        <a href="{{ about.atelier.buttonUrl }}" class="btn btn--outline">{{ about.atelier.buttonLabel }} <span class="arrow">&rarr;</span></a>
+    </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+    <div class="timeline__header reveal--slow">
+        <p class="t-eyebrow">{{ about.timeline.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ about.timeline.headline }}</h2>
+    </div>
+    <div class="timeline__list">
+        {% for item in about.timeline.items %}
+        <div class="timeline__item reveal">
+            <div class="timeline__year"><span>{{ item.year }}</span></div>
+            <div class="timeline__desc">
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- MATERIALS -->
+<section class="materials">
+    <div class="materials__content reveal--left">
+        <p class="t-eyebrow">{{ about.materials.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ about.materials.headline }}</h2>
+        <p class="t-body">{{ about.materials.body }}</p>
+        <a href="{{ about.materials.buttonUrl }}" class="btn btn--outline">{{ about.materials.buttonLabel }} <span class="arrow">&rarr;</span></a>
+    </div>
+    <div class="materials__image reveal--scale">
+        <img class="parallax-img" src="{{ about.materials.image }}" alt="{{ about.materials.imageAlt }}">
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta reveal--slow">
+    <p class="t-eyebrow">{{ about.cta.eyebrow }}</p>
+    <h2 class="t-display t-display--lg">{{ about.cta.headline }}</h2>
+    <p class="t-body">{{ about.cta.body }}</p>
+    <div class="btn-group">
+        <a href="{{ about.cta.primaryButton.url }}" class="btn btn--primary">{{ about.cta.primaryButton.label }} <span class="arrow">&rarr;</span></a>
+        <a href="{{ about.cta.secondaryButton.url }}" class="btn btn--outline">{{ about.cta.secondaryButton.label }} <span class="arrow">&rarr;</span></a>
+    </div>
+</section>
+
+{% block scripts %}
+<script>
+    // Reveal animations
+    const allReveals = document.querySelectorAll('.reveal, .reveal--left, .reveal--right, .reveal--scale, .reveal--slow');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                const staggerItems = entry.target.querySelectorAll('.stagger-item');
+                staggerItems.forEach((item, i) => {
+                    setTimeout(() => {
+                        item.style.transitionDelay = `${i * 120}ms`;
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, i * 120);
+                });
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    allReveals.forEach(el => revealObserver.observe(el));
+
+    // Timeline stagger
+    const timelineItems = document.querySelectorAll('.timeline__item');
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                timelineObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+    timelineItems.forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(35px)';
+        el.style.transitionDelay = `${i * 100}ms`;
+    });
+    timelineItems.forEach(el => timelineObserver.observe(el));
+
+    // Parallax
+    const parallaxImages = document.querySelectorAll('.parallax-img');
+    let ticking = false;
+    function updateParallax() {
+        parallaxImages.forEach(img => {
+            const rect = img.closest('section, div').getBoundingClientRect();
+            const offset = rect.top + rect.height / 2 - window.innerHeight / 2;
+            img.style.transform = `translateY(${offset * 0.08}px)`;
+        });
+        ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+        if (!ticking) { requestAnimationFrame(updateParallax); ticking = true; }
+    }, { passive: true });
+</script>
+{% endblock %}

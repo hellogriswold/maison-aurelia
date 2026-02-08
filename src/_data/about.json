@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "eyebrow": "Our Story",
+    "headline": "Spaces that honour how we live",
+    "body": "Since 2009, Maison Aurelia has pursued a singular vision: to create furniture of enduring beauty that transforms houses into homes of meaning and character.",
+    "video": "/assets/about-video.mp4"
+  },
+  "philosophy": {
+    "eyebrow": "Our Philosophy",
+    "headline": "We believe that the objects we live with shape the quality of every day",
+    "paragraphs": [
+      "Every piece we create begins with a question: how will this object participate in someone's life? Not as decoration, but as a companion to mornings, evenings, and the quiet moments in between.",
+      "This conviction guides everything — from the forests where our wood is sourced to the hands that shape each joint. We design for permanence, because beauty that endures is the only kind worth pursuing."
+    ]
+  },
+  "founders": {
+    "eyebrow": "The Beginning",
+    "headline": "Born from a belief that home is where art and life converge",
+    "paragraphs": [
+      "Maison Aurelia was founded in Lyon by Isabelle and Marc Aurelia — a curator and a cabinetmaker who shared a dissatisfaction with the disposable nature of modern furnishing. They envisioned a maison where design heritage met contemporary living.",
+      "What began as a small atelier producing bespoke dining tables has grown into a global design house, yet the founding principle remains unchanged: every piece must earn its place in your home."
+    ],
+    "signatureName": "Isabelle & Marc Aurelia",
+    "signatureTitle": "Co-founders",
+    "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=85&auto=format",
+    "imageAlt": "Elegantly appointed interior with warm natural light"
+  },
+  "values": {
+    "eyebrow": "What Guides Us",
+    "headline": "Six principles that shape everything we make",
+    "items": [
+      { "number": "01", "title": "Permanence Over Trend", "body": "We design pieces that outlive the seasons. Every proportion, every material choice is tested against the question: will this still feel right in thirty years?" },
+      { "number": "02", "title": "Material Integrity", "body": "We source only what we can trace. Our hardwoods come from managed forests, our leathers from heritage tanneries, our textiles from artisan mills across Europe." },
+      { "number": "03", "title": "Human Craft", "body": "Machines shape. Hands refine. Every piece passes through the hands of master artisans who bring decades of intuition to the final finish." },
+      { "number": "04", "title": "Restrained Design", "body": "We believe in the power of what is left out. Our designs are defined by restraint — clean lines, honest joinery, and a refusal to over-embellish." },
+      { "number": "05", "title": "Environmental Stewardship", "body": "Sustainability is not a programme — it is a design constraint. We use reclaimed materials where possible and design for disassembly and repair." },
+      { "number": "06", "title": "Personal Service", "body": "Furnishing a home is intimate work. Our designers consult closely with every client, ensuring each space reflects their individual story." }
+    ]
+  },
+  "atelier": {
+    "eyebrow": "Our Atelier",
+    "headline": "Where tradition meets precision",
+    "body": "Our Lyon atelier houses forty artisans across woodworking, upholstery, and finishing. Each discipline works in concert — ensuring that when a piece leaves our workshop, it carries the full weight of collective mastery.",
+    "buttonLabel": "Visit the Atelier",
+    "buttonUrl": "#",
+    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=85&auto=format",
+    "imageAlt": "Craftsman workshop with tools and timber"
+  },
+  "timeline": {
+    "eyebrow": "Milestones",
+    "headline": "A journey of quiet ambition",
+    "items": [
+      { "year": "2009", "title": "The First Workshop", "description": "Isabelle and Marc open a small atelier in Lyon's Croix-Rousse district, producing bespoke dining tables from reclaimed French oak." },
+      { "year": "2012", "title": "Salon du Meuble Recognition", "description": "The Belmont Sofa debuts at Paris's Salon du Meuble, earning critical acclaim for its seamless marriage of comfort and sculptural form." },
+      { "year": "2015", "title": "London Showroom Opens", "description": "Maison Aurelia's first international showroom opens on Kings Road, Chelsea — a 400-square-metre space designed by Studio Liaigre." },
+      { "year": "2018", "title": "The Sustainability Commitment", "description": "We become the first luxury furniture house to achieve full supply chain traceability, from forest to finished piece." },
+      { "year": "2021", "title": "New York & Tokyo", "description": "Showrooms open in SoHo and Omotesando, bringing Maison Aurelia's design philosophy to two of the world's most discerning markets." },
+      { "year": "2024", "title": "The Heritage Collection", "description": "Fifteen years of craft culminate in our most ambitious collection — a 42-piece line that reimagines European furniture archetypes for contemporary living." }
+    ]
+  },
+  "materials": {
+    "eyebrow": "Materials & Sourcing",
+    "headline": "We begin where the best materials grow",
+    "body": "Every piece of timber is hand-selected from sustainably managed forests across France, Scandinavia, and Japan. Our leathers are vegetable-tanned in Italian tanneries that have operated for over a century. Nothing is left to chance.",
+    "buttonLabel": "Our Materials",
+    "buttonUrl": "#",
+    "image": "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=1200&q=85&auto=format",
+    "imageAlt": "Close-up of natural wood grain and handcrafted details"
+  },
+  "cta": {
+    "eyebrow": "Begin Your Journey",
+    "headline": "Every extraordinary space starts with a conversation",
+    "body": "Whether you are furnishing a single room or an entire residence, our design team is here to guide you. Every consultation is complimentary and without obligation.",
+    "primaryButton": { "label": "Book a Consultation", "url": "#" },
+    "secondaryButton": { "label": "Explore Collections", "url": "/" }
+  }
+}

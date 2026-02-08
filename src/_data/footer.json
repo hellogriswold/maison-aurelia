@@ -1,0 +1,44 @@
+{
+  "columns": [
+    {
+      "title": "Explore",
+      "links": [
+        { "label": "Signature Sofas", "url": "#" },
+        { "label": "Dining Collection", "url": "#" },
+        { "label": "Bedroom", "url": "#" },
+        { "label": "Accent Chairs", "url": "#" },
+        { "label": "Lighting", "url": "#" }
+      ]
+    },
+    {
+      "title": "Maison Aurelia",
+      "links": [
+        { "label": "Our Story", "url": "/about/" },
+        { "label": "Sustainability", "url": "#" },
+        { "label": "Careers", "url": "#" },
+        { "label": "Press", "url": "#" },
+        { "label": "Privacy Policy", "url": "#" }
+      ]
+    },
+    {
+      "title": "Client Services",
+      "links": [
+        { "label": "Find a Showroom", "url": "#" },
+        { "label": "Care & Maintenance", "url": "#" },
+        { "label": "Frequently Asked", "url": "#" },
+        { "label": "Contact Us", "url": "#" },
+        { "label": "Returns", "url": "#" }
+      ]
+    },
+    {
+      "title": "Trade & Press",
+      "links": [
+        { "label": "Trade Program", "url": "#" },
+        { "label": "Interior Designers", "url": "#" },
+        { "label": "Architects", "url": "#" },
+        { "label": "Press Inquiries", "url": "#" }
+      ]
+    }
+  ],
+  "copyright": "© 2026 Maison Aurelia"
+}

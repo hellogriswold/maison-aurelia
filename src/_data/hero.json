@@ -1,0 +1,7 @@
+{
+  "eyebrow": "The Art of Living Beautifully",
+  "headline": "Furniture shaped by artisans, refined for you",
+  "primaryButton": { "label": "Explore Collections", "url": "#collections" },
+  "secondaryButton": { "label": "Book a Consultation", "url": "#consultation" },
+  "video": "/assets/hero-video.mp4"
+}

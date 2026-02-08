@@ -1,0 +1,8 @@
+{
+  "main": [
+    { "label": "Collections", "url": "/collections/" },
+    { "label": "Inspiration", "url": "/#inspiration" },
+    { "label": "Guides", "url": "/#guides" },
+    { "label": "About", "url": "/about/" }
+  ]
+}

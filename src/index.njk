@@ -1,0 +1,172 @@
+---
+title: The Art of Living Beautifully
+layout: base.njk
+---
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div class="hero__media">
+        <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+            <source src="{{ hero.video }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__card">
+        <p class="t-eyebrow">{{ hero.eyebrow }}</p>
+        <h1 class="t-display t-display--xl">{{ hero.headline }}</h1>
+        <div class="btn-group">
+            <a href="{{ hero.primaryButton.url }}" class="btn btn--primary">{{ hero.primaryButton.label }} <span class="arrow">&rarr;</span></a>
+            <a href="{{ hero.secondaryButton.url }}" class="btn btn--ghost">{{ hero.secondaryButton.label }} <span class="arrow">&rarr;</span></a>
+        </div>
+    </div>
+    <div class="hero__articles"></div>
+</section>
+
+<!-- 2. FEATURED COLLECTIONS -->
+<section id="collections" class="collections">
+    <div class="collections__header reveal">
+        <h2>{{ featuredCollections.heading }}</h2>
+        <a href="{{ featuredCollections.viewAllUrl }}">{{ featuredCollections.viewAllLabel }}</a>
+    </div>
+    <div class="collections__grid">
+        {% for item in featuredCollections.items %}
+        <div class="collection-card reveal">
+            <div class="collection-card__image">
+                <img src="{{ item.image }}" alt="{{ item.alt }}">
+            </div>
+            <p class="collection-card__name">{{ item.name }}</p>
+            <p class="collection-card__desc">{{ item.category }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- 3. CTA SPLIT -->
+<section id="consultation" class="cta-split">
+    <div class="cta-split__content reveal">
+        <p class="t-eyebrow">{{ consultation.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ consultation.headline }}</h2>
+        <p class="t-body">{{ consultation.body }}</p>
+        <div class="btn-group">
+            <a href="{{ consultation.primaryButton.url }}" class="btn btn--primary">{{ consultation.primaryButton.label }} <span class="arrow">&rarr;</span></a>
+            <a href="{{ consultation.secondaryButton.url }}" class="btn btn--outline">{{ consultation.secondaryButton.label }} <span class="arrow">&rarr;</span></a>
+        </div>
+    </div>
+    <div class="cta-split__image">
+        <img src="{{ consultation.image }}" alt="{{ consultation.imageAlt }}">
+        <div class="cta-split__tag">
+            <strong>{{ consultation.tagName }}</strong>
+            <span style="font-size:0.6875rem;color:var(--color-text-muted);">{{ consultation.tagDesc }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- 4. CRAFT -->
+<section class="craft">
+    <div class="craft__image">
+        <img src="{{ craft.image }}" alt="{{ craft.imageAlt }}">
+    </div>
+    <div class="craft__content reveal">
+        <p class="t-eyebrow">{{ craft.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ craft.headline }}</h2>
+        <p class="t-body">{{ craft.body }}</p>
+        <a href="{{ craft.buttonUrl }}" class="btn btn--outline">{{ craft.buttonLabel }} <span class="arrow">&rarr;</span></a>
+    </div>
+</section>
+
+<!-- 5. INSPIRATION -->
+<section id="inspiration">
+    <div class="inspiration-intro reveal">
+        <p class="t-eyebrow">{{ inspiration.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ inspiration.headline }}</h2>
+        <p class="t-body">{{ inspiration.body }}</p>
+        <a href="{{ inspiration.buttonUrl }}" class="btn btn--outline">{{ inspiration.buttonLabel }} <span class="arrow">&rarr;</span></a>
+    </div>
+    <div class="inspiration-image">
+        <img src="{{ inspiration.image }}" alt="{{ inspiration.imageAlt }}">
+        <div class="inspiration-image__tag">
+            <strong>{{ inspiration.tagName }}</strong>
+            <span>{{ inspiration.tagDesc }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- 6. BRAND STORY -->
+<section class="brand-story">
+    <div class="brand-story__image">
+        <img src="{{ brandStory.image }}" alt="{{ brandStory.imageAlt }}">
+    </div>
+    <div class="brand-story__card reveal">
+        <p class="t-eyebrow">{{ brandStory.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ brandStory.headline }}</h2>
+        <p class="t-body">{{ brandStory.body }}</p>
+        <div class="btn-group">
+            <a href="{{ brandStory.primaryButton.url }}" class="btn btn--outline">{{ brandStory.primaryButton.label }} <span class="arrow">&rarr;</span></a>
+            <a href="{{ brandStory.secondaryButton.url }}" class="btn btn--ghost">{{ brandStory.secondaryButton.label }} <span class="arrow">&rarr;</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- 7. GUIDES -->
+<section id="guides" class="guides">
+    <div class="guides__image">
+        <img src="{{ guides.image }}" alt="{{ guides.imageAlt }}">
+    </div>
+    <div class="guides__content reveal">
+        <p class="t-eyebrow">{{ guides.eyebrow }}</p>
+        <h2 class="t-display t-display--lg">{{ guides.headline }}</h2>
+        <p class="t-body">{{ guides.body }}</p>
+        <a href="{{ guides.buttonUrl }}" class="btn btn--outline">{{ guides.buttonLabel }} <span class="arrow">&rarr;</span></a>
+    </div>
+</section>
+
+<!-- 8. SOCIAL -->
+<section class="social">
+    <p class="t-eyebrow reveal">{{ social.eyebrow }}</p>
+    <h2 class="t-display t-display--lg reveal">{{ social.headline }}</h2>
+    <div class="btn-group reveal">
+        <a href="{{ social.primaryButton.url }}" class="btn btn--primary">{{ social.primaryButton.label }} <span class="arrow">&rarr;</span></a>
+        <a href="{{ social.secondaryButton.url }}" class="btn btn--outline">{{ social.secondaryButton.label }} <span class="arrow">&rarr;</span></a>
+    </div>
+    <div class="social__grid">
+        {% for img in social.images %}
+        <div class="social__grid-item">
+            <img src="{{ img.src }}" alt="{{ img.alt }}">
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- 9. NEWSLETTER -->
+<section class="newsletter">
+    <p class="t-eyebrow reveal">{{ newsletter.eyebrow }}</p>
+    <h2 class="t-display t-display--lg reveal">{{ newsletter.headline }}</h2>
+    <form class="newsletter__form reveal" onsubmit="event.preventDefault()">
+        <div class="newsletter__form-wrap">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <button type="submit" aria-label="Subscribe">
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+    </form>
+    <div class="newsletter__consent reveal">
+        <input type="checkbox" id="consent">
+        <label for="consent">I agree to the <a href="#">privacy policy</a>.</label>
+    </div>
+</section>
+
+{% block scripts %}
+<script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+</script>
+{% endblock %}
