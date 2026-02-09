@@ -12,7 +12,7 @@
 </head>
 <body>
     {% include "header.njk" %}
-    {% block content %}{% endblock %}
+    {{ content | safe }}
     {% include "footer.njk" %}
 
     <button class="scroll-top" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
