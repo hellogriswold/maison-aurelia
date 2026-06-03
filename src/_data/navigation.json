@@ -1,8 +1,8 @@
 {
   "main": [
     { "label": "Collections", "url": "/collections/" },
-    { "label": "Inspiration", "url": "/#inspiration" },
-    { "label": "Guides", "url": "/#guides" },
+    { "label": "Inspiration", "url": "/maison/#inspiration" },
+    { "label": "Guides", "url": "/maison/#guides" },
     { "label": "About", "url": "/about/" }
   ]
 }
