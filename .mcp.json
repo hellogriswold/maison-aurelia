@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "zillow": {
+      "command": "mcp/zillow-mcp-server/.venv/bin/python",
+      "args": ["mcp/zillow-mcp-server/zillow_mcp_server.py"],
+      "env": {
+        "ZILLOW_API_KEY": "${ZILLOW_API_KEY}"
+      }
+    }
+  }
+}
